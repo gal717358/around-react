@@ -4,25 +4,31 @@ import { api } from "../utils/Api";
 import Card from "./Card";
 
 function Main(props) {
-  const [userName, setUserName] = useState({});
+  const [userName, setUserName] = useState("");
   const [userDescription, setUserDescription] = useState({});
   const [userAvatar, setUserAvatar] = useState({});
   const [cardData, setCardData] = useState([]);
 
   useEffect(() => {
-    api.getInitialCards().then((cardArray) => {
-      return setCardData(cardArray);
-    });
+    api
+      .getInitialCards()
+      .then((cardArray) => {
+        return setCardData(cardArray);
+      })
+      .catch((err) => console.log(`${err}`));
   }, []);
 
   useEffect(() => {
-    api.getUserInfo().then((res) => {
-      console.log("resUser", res);
-      const userData = res;
-      setUserName(userData.name);
-      setUserDescription(userData.about);
-      setUserAvatar(userData.avatar);
-    });
+    api
+      .getUserInfo()
+      .then((res) => {
+        console.log("resUser", res);
+        const userData = res;
+        setUserName(userData.name);
+        setUserDescription(userData.about);
+        setUserAvatar(userData.avatar);
+      })
+      .catch((err) => console.log(`${err}`));
   }, []);
 
   return (
