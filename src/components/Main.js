@@ -5,8 +5,8 @@ import Card from "./Card";
 
 function Main(props) {
   const [userName, setUserName] = useState("");
-  const [userDescription, setUserDescription] = useState({});
-  const [userAvatar, setUserAvatar] = useState({});
+  const [userDescription, setUserDescription] = useState("");
+  const [userAvatar, setUserAvatar] = useState("");
   const [cardData, setCardData] = useState([]);
 
   useEffect(() => {
