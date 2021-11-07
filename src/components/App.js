@@ -37,10 +37,10 @@ function App() {
   }
 
   function handleCardDelete() {
-    console.log("card._id",selectedCard._id)
-
     api.deleteCard(selectedCard._id).then(() => {
-      setCardData((state) => state.filter((card) => card._id !== selectedCard._id));
+      setCardData((state) =>
+        state.filter((card) => card._id !== selectedCard._id)
+      );
     });
     closeAllPopups();
   }
@@ -77,10 +77,8 @@ function App() {
     setSelectedCard(props);
   };
   const handleDeleteCardClick = (card) => {
-    console.log(card);
     setIsDeletePopupOpen(true);
     setSelectedCard(card);
-    
   };
 
   const handleEditAvatarClick = () => {
