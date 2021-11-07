@@ -23,52 +23,47 @@ class Api {
     });
   }
 
-//   createCard(data) {
-//     return customFetch(`${this.baseUrl}/cards`, {
-//       headers: this.headers,
-//       method: "POST",
-//       body: JSON.stringify(data),
-//     });
-//   }
-//   editProfile(profileInfo) {
-//     // const { name, job } = profileInfo;
-//     return customFetch(`${this.baseUrl}/users/me`, {
-//       headers: this.headers,
-//       method: "PATCH",
-//       body: JSON.stringify({
-//         name: profileInfo.name,
-//         about: profileInfo.job,
-//       }),
-//     });
-//   }
+  createCard(data) {
+    return customFetch(`${this.baseUrl}/cards`, {
+      headers: this.headers,
+      method: "POST",
+      body: JSON.stringify(data),
+    });
+  }
 
-//   deleteCard(cardId) {
-//     return customFetch(`${this.baseUrl}/cards/${cardId}`, {
-//       headers: this.headers,
-//       method: "DELETE",
-//     });
-//   }
-//   likeCard(cardId) {
-//     return customFetch(`${this.baseUrl}/cards/likes/${cardId}`, {
-//       headers: this.headers,
-//       method: "PUT",
-//     });
-//   }
-//   deleteLike(cardId) {
-//     return customFetch(`${this.baseUrl}/cards/likes/${cardId}`, {
-//       headers: this.headers,
-//       method: "DELETE",
-//     });
-//   }
-//   avatarImage(avatarSrc) {
-//     return customFetch(`${this.baseUrl}/users/me/avatar`, {
-//       headers: this.headers,
-//       method: "PATCH",
-//       body: JSON.stringify({
-//         avatar: avatarSrc,
-//       }),
-//     });
-//   }
+  editProfile(profileInfo) {
+    return customFetch(`${this.baseUrl}/users/me`, {
+      headers: this.headers,
+      method: "PATCH",
+      body: JSON.stringify(profileInfo),
+    });
+  }
+
+  deleteCard(cardId) {
+    return customFetch(`${this.baseUrl}/cards/${cardId}`, {
+      headers: this.headers,
+      method: "DELETE",
+    });
+  }
+  likeCard(cardId) {
+    return customFetch(`${this.baseUrl}/cards/likes/${cardId}`, {
+      headers: this.headers,
+      method: "PUT",
+    });
+  }
+  deleteLike(cardId) {
+    return customFetch(`${this.baseUrl}/cards/likes/${cardId}`, {
+      headers: this.headers,
+      method: "DELETE",
+    });
+  }
+  avatarImage(avatarSrc) {
+    return customFetch(`${this.baseUrl}/users/me/avatar`, {
+      headers: this.headers,
+      method: "PATCH",
+      body: JSON.stringify(avatarSrc),
+    });
+  }
 }
 
 export const api = new Api({

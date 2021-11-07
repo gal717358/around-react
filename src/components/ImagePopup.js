@@ -2,7 +2,7 @@ function ImagePopup(props) {
   return (
     <div
       className={`modal modal_type${props.name} ${
-        props.card.name ? "modal_opened" : ""
+        props.isOpen ? "modal_opened" : ""
       }`}
     >
       <div className="modal__container modal__container_type_popup">
