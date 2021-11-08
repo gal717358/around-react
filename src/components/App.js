@@ -5,7 +5,7 @@ import PopupWithForm from "./PopupWithForm.js";
 import EditProfilePopup from "./EditProfilePopup.js";
 import { useState, useEffect } from "react";
 import ImagePopup from "./ImagePopup.js";
-import { api } from "../utils/api.js";
+import api from "../utils/api.js";
 import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
 import EditAvatarPopup from "./EditAvatarPopup.js";
 import AddPlacePopup from "./AddPlacePopup";
