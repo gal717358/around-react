@@ -2,10 +2,10 @@ import Header from "./Header.js";
 import Main from "./Main.js";
 import Footer from "./Footer.js";
 import PopupWithForm from "./PopupWithForm.js";
-import EditProfilePopup from "./EditProfilePopup .js";
+import EditProfilePopup from "./EditProfilePopup.js";
 import { useState, useEffect } from "react";
 import ImagePopup from "./ImagePopup.js";
-import { api } from "../utils/Api.js";
+import { api } from "../utils/api.js";
 import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
 import EditAvatarPopup from "./EditAvatarPopup.js";
 import AddPlacePopup from "./AddPlacePopup";
@@ -24,22 +24,22 @@ function App() {
     const isLiked = cardData.likes.some((i) => i._id === currentUser._id);
     if (!isLiked)
       api.likeCard(cardData._id).then((newCard) => {
-        setCardData((state) =>
-          state.map((card) => (card._id === cardData._id ? newCard : card))
+        setCardData((cards) =>
+          cards.map((card) => (card._id === cardData._id ? newCard : card))
         );
       });
     else
       api.deleteLike(cardData._id).then((newCard) => {
-        setCardData((state) =>
-          state.map((card) => (card._id === cardData._id ? newCard : card))
+        setCardData((cards) =>
+          cards.map((card) => (card._id === cardData._id ? newCard : card))
         );
       });
   }
 
   function handleCardDelete() {
     api.deleteCard(selectedCard._id).then(() => {
-      setCardData((state) =>
-        state.filter((card) => card._id !== selectedCard._id)
+      setCardData((cards) =>
+        cards.filter((card) => card._id !== selectedCard._id)
       );
     });
     closeAllPopups();
