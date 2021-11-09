@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.257580cb.chunk.css",
-    "main.js": "/static/js/main.1068a3d7.chunk.js",
-    "main.js.map": "/static/js/main.1068a3d7.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.01450838.js",
-    "runtime-main.js.map": "/static/js/runtime-main.01450838.js.map",
-    "static/js/2.5fb25226.chunk.js": "/static/js/2.5fb25226.chunk.js",
-    "static/js/2.5fb25226.chunk.js.map": "/static/js/2.5fb25226.chunk.js.map",
-    "static/js/3.98d75b2e.chunk.js": "/static/js/3.98d75b2e.chunk.js",
-    "static/js/3.98d75b2e.chunk.js.map": "/static/js/3.98d75b2e.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.257580cb.chunk.css.map": "/static/css/main.257580cb.chunk.css.map",
-    "static/js/2.5fb25226.chunk.js.LICENSE.txt": "/static/js/2.5fb25226.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/penEditPicture.a086f758.svg",
-    "static/media/logo.918b3ff6.svg": "/static/media/logo.918b3ff6.svg"
+    "main.css": "/gal717358/around-react.git/static/css/main.6758797d.chunk.css",
+    "main.js": "/gal717358/around-react.git/static/js/main.51c7c97e.chunk.js",
+    "main.js.map": "/gal717358/around-react.git/static/js/main.51c7c97e.chunk.js.map",
+    "runtime-main.js": "/gal717358/around-react.git/static/js/runtime-main.d2713e38.js",
+    "runtime-main.js.map": "/gal717358/around-react.git/static/js/runtime-main.d2713e38.js.map",
+    "static/js/2.756f7345.chunk.js": "/gal717358/around-react.git/static/js/2.756f7345.chunk.js",
+    "static/js/2.756f7345.chunk.js.map": "/gal717358/around-react.git/static/js/2.756f7345.chunk.js.map",
+    "static/js/3.fa2efbcf.chunk.js": "/gal717358/around-react.git/static/js/3.fa2efbcf.chunk.js",
+    "static/js/3.fa2efbcf.chunk.js.map": "/gal717358/around-react.git/static/js/3.fa2efbcf.chunk.js.map",
+    "index.html": "/gal717358/around-react.git/index.html",
+    "static/css/main.6758797d.chunk.css.map": "/gal717358/around-react.git/static/css/main.6758797d.chunk.css.map",
+    "static/js/2.756f7345.chunk.js.LICENSE.txt": "/gal717358/around-react.git/static/js/2.756f7345.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/gal717358/around-react.git/static/media/penEditPicture.a086f758.svg",
+    "static/media/logo.918b3ff6.svg": "/gal717358/around-react.git/static/media/logo.918b3ff6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.01450838.js",
-    "static/js/2.5fb25226.chunk.js",
-    "static/css/main.257580cb.chunk.css",
-    "static/js/main.1068a3d7.chunk.js"
+    "static/js/runtime-main.d2713e38.js",
+    "static/js/2.756f7345.chunk.js",
+    "static/css/main.6758797d.chunk.css",
+    "static/js/main.51c7c97e.chunk.js"
   ]
 }
