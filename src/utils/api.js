@@ -3,7 +3,7 @@ const customFetch = (url, headers) =>
     res.ok ? res.json() : Promise.reject(res.statusText)
   );
 
- class Api {
+class Api {
   constructor({ baseUrl, headers }) {
     this.baseUrl = baseUrl;
     this.headers = headers;
@@ -66,7 +66,7 @@ const customFetch = (url, headers) =>
   }
 }
 
- export const api = new Api({
+export const api = new Api({
   baseUrl: "https://around.nomoreparties.co/v1/group-12",
   headers: {
     authorization: "c1447c07-9b09-4ed7-9490-5ede153a83d9",

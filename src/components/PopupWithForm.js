@@ -4,7 +4,7 @@ function PopupWithForm(props) {
   return (
     <div
       className={`modal modal_type_${props.name} ${
-        props.isOpen ? "modal_opened" : ""
+        props.isOpen && "modal_opened"
       }`}
     >
       <div className="modal__container">
