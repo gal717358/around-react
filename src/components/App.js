@@ -20,25 +20,23 @@ function App() {
   const [currentUser, setCurrentUser] = useState({});
   const [cardsData, setCardsData] = useState([]);
 
-  function handleCardLike(cardsData) {
-    const isLiked = cardsData.likes.some(
-      (item) => item._id === currentUser._id
-    );
+  function handleCardLike(cardData) {
+    const isLiked = cardData.likes.some((item) => item._id === currentUser._id);
     if (!isLiked)
       api
-        .likeCard(cardsData._id)
+        .likeCard(cardData._id)
         .then((newCard) => {
           setCardsData((cards) =>
-            cards.map((card) => (card._id === cardsData._id ? newCard : card))
+            cards.map((card) => (card._id === cardData._id ? newCard : card))
           );
         })
         .catch((err) => console.log(`${err}`));
     else
       api
-        .deleteLike(cardsData._id)
+        .deleteLike(cardData._id)
         .then((newCard) => {
           setCardsData((cards) =>
-            cards.map((card) => (card._id === cardsData._id ? newCard : card))
+            cards.map((card) => (card._id === cardData._id ? newCard : card))
           );
         })
         .catch((err) => console.log(`${err}`));

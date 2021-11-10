@@ -11,7 +11,7 @@ function AddPlacePopup(props) {
     props.onAddPlaceSubmit({
       name: name.current.value,
       link: link.current.value,
-    });
+    })
     name.current.value = "";
     link.current.value = "";
   }
